@@ -53,3 +53,44 @@ chatbot-pdf-v8/
 │   └── vector_search.py    # Função para busca vetorial
 ├── requirements.txt        # Dependências do projeto
 └── README.md               # Documentação (este arquivo)
+```
+## 🛠️ Etapas do Projeto (Passo a Passo)
+Upload dos PDFs
+- Usuário faz upload de um ou mais arquivos PDF
+- Textos são extraídos de forma estruturada
+- Geração de Embeddings
+- Cada trecho dos PDFs é convertido em vetor semântico
+- Utiliza-se modelos como text-embedding-ada-002 da OpenAI
+- Indexação
+- Os vetores são armazenados em uma base vetorial (ex: FAISS)
+- Interação via Chat
+- Usuário envia uma pergunta
+- Sistema busca os trechos mais relevantes
+- Um LLM (modelo de linguagem) gera a resposta com base nesses dados
+
+## 💬 Exemplo de Uso (Simulado)
+Pergunta: "Qual a principal vantagem de um motor V8 em relação ao V6?"
+Resposta simulada:
+
+"Motores V8 tendem a entregar mais potência e torque, sendo preferidos em veículos de alto desempenho. Em contrapartida, são menos eficientes em termos de consumo de combustível em comparação com motores V6."
+
+## 🚧 Desafios Enfrentados
+Acesso limitado a serviços como OpenAI, Pinecone, LangChain Cloud
+
+Algumas APIs cobram por tokens, o que inviabiliza testes longos
+
+Alternativas gratuitas possuem limite de uso diário ou baixa performance
+
+## ✅ Conclusão
+Apesar das limitações técnicas, estudei toda a estrutura necessária para a construção de um sistema inteligente de análise de PDFs com IA generativa.
+Esse projeto me permitiu explorar:
+
+Pré-processamento de documentos
+
+Criação de pipelines de IA com foco em embeddings
+
+Fundamentos de busca semântica e indexação vetorial
+
+Geração de respostas contextuais com LLMs
+
+💡 Assim que possível, pretendo revisitar este projeto com acesso total às ferramentas e implementá-lo na prática para fortalecer ainda mais meu portfólio.
